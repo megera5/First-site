@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Описание</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color:#f0f6f7;
+        }
+        .text {
+            position:relative;
+            text-align:center;
+            min-height:700px;
+            display: flex;
+            flex-direction:column;
+        }
+        .text h1 {
+            font-size:30px;
+            font-family: monospace;
+            font-weight:bold;
+            margin-top:15px;
+            color:#043e4f;
+            margin-left:50px;
+        }
+        header {
+            display:flex;
+            justify-content: center;
+            min-height:7vh;
+        }      
+
+        ul {
+            display: flex;
+        }
+
+        .menu {
+            display:block;
+            padding:0 20px;
+            color:#f2e9ea;
+            font-size:16px;
+            font-weight:bolder;
+            font-family:sans-serif;
+            text-transform:uppercase;
+            transition:.5s;
+            margin-top:20px;
+        }
+
+        li a {
+            text-decoration:none;
+            color:#043e4f;
+            font-weight:bolder;
+            transition:.5s;
+            padding:10px;
+            background-color:white;
+            opacity:80%;
+        }
+
+        ul:hover li a:hover {
+            font-size: 17px;
+            background-color:#043e4f;
+            color:white;
+        }
+        h1,button {
+            margin-bottom:20px;
+        }
+        h2{
+            color:#2e7c94;
+            font-weight:bold;
+            font-size:21px;
+            margin-top:-630px;
+            margin-left:250px;
+            font-family: 'Arial', sans-serif;
+            width:220px;
+            text-align:center;
+        }
+        .img2{
+            position:absolute;
+            bottom:0px;
+            top:180px;
+            left:240px;
+            width:240px;
+            height:220px;
+        }
+        .img3{
+            position:absolute;
+            bottom:0px;
+            top:250px;
+            right:340px;
+            width:180px;
+            height:150px;
+        }
+        h5{
+            color:#2e7c94;
+            font-weight:bold;
+            font-size:21px;
+            margin-top:30px;
+            margin-left:1400px;
+            font-family: 'Arial', sans-serif;
+
+            width:220px;
+            text-align:center;
+        }
+        p{
+            border-radius: 5px;
+            box-shadow: 0 0 0 3px #2e7c94;
+            text-indent: 30px;
+            padding: 10px 20px 10px 20px;
+            width:500px;
+            text-align:justify;
+            display:inline-block;
+            font-size:18px;
+        }
+        #t1{
+            margin-left:800px;
+            margin-top:50px;
+        }
+        .img4{
+            position:absolute;
+            bottom:0px;
+            top:480px;
+            left:1400px;
+            width:220px;
+            height:200px;
+        }
+        #t4{
+            margin-left:550px;
+            margin-top:50px;
+        }
+        .img5{
+            position:absolute;
+            bottom:0px;
+            top:540px;
+            left:320px;
+            width:180px;
+            height:150px;
+        }
+        h4{
+            color:#2e7c94;
+            font-weight:bold;
+            font-size:21px;
+            margin-top:30px;
+            margin-left:250px;
+            font-family: 'Arial', sans-serif;
+            width:220px;
+            text-align:center;
+        }
+        .img6{
+            position:absolute;
+            bottom:0px;
+            top:770px;
+            left:255px;
+            width:220px;
+            height:200px;
+        }
+        #t5{
+            margin-left:800px;
+            margin-top:20px;
+        }
+        .img8{
+            position:absolute;
+            bottom:0px;
+            top:220px;
+            left:550px;
+            width:200px;
+            height:150px;
+        }
+        .img9{
+            position:absolute;
+            bottom:0px;
+            top:500px;
+            left:1150px;
+            width:200px;
+            height:150px;
+
+        }
+        .img10{
+            position:absolute;
+            bottom:0px;
+            top:780px;
+            left:550px;
+            width:200px;
+            height:150px;
+        }
+        .img11{
+            position:absolute;
+            bottom:0px;
+            top:800px;
+            right:340px;
+            width:180px;
+            height:150px;
+        }
+        h6{
+            color:#2e7c94;
+            font-weight:bold;
+            font-size:21px;
+            margin-top:20px;
+            margin-left:1400px;
+            font-family: 'Arial', sans-serif;
+            width:220px;
+            text-align:center;
+        }
+        .img12{
+            position:absolute;
+            bottom:0px;
+            top:1050px;
+            right:250px;
+            width:300px;
+            height:200px;
+        }
+        .img13{
+            position:absolute;
+            bottom:0px;
+            top:1070px;
+            left:1150px;
+            width:200px;
+            height:150px;
+        }
+        #t6{
+            margin-left:550px;
+            margin-top:70px;
+        }
+        footer {
+            background-color:#043e4f;
+            padding-top: 20px;
+            padding-bottom: 70px;
+            opacity:80% ;
+            margin-top:40px;
+        }
+
+        .container {
+            width:100%;
+            margin:auto;
+            display:flex;
+            justify-content:center;
+        }
+        .footer {
+             width:50%;
+        }
+
+        h3 {
+            font-size:25px;
+            margin-bottom:15px;
+            text-align:center;
+            color:white;
+        }
+
+        .footer-text p1 {
+            margin:auto;
+            padding:5px;
+            color:white;
+            font-size:18px;
+        }
+
+        .footer-text ul {
+            text-align:center;
+            font-size:18px;
+        }
+
+        .list li {
+            width:auto;
+            text-align:center;
+            list-style-type:none;
+            padding:5px;
+            margin-left:10px;
+            position:relative;
+        }
+    </style>
+</head>
+<body>
+<header>
+<ul>
+            <li class="menu"><a href="опис.html">Описание</a></li>
+            <li class="menu"><a href="sped.html">Среды для разработки</a></li>
+            <li class="menu"><a href="главная.html">Главная</a></li>
+            <li class="menu"><a href="iz.html">Языки будущего</a></li>
+             <li class="menu"><a href="kon.html"> Контакты </a></li>
+        </ul>   
+</header>
+<div class="text">
+    <h1>Описание языков программирования</h1>
+</div>
+<h2>Python</h2>
+<img class="img2" src="питон.png">
+<img class="img8"  src="стрел.jpg">
+<img class="img3"  src="стрелка3.png">
+<p id="t1">Python — это высокоуровневый язык программирования, который используется в различных сферах IT, таких как машинное обучение, разработка приложений, web, парсинг и другие.
+Автор языка Python назвал его в честь британского комедийного шоу «Monty Python», которое было популярно в начале 1970-х годов.
+Это телешоу позволяло автору расслабиться и отвлечься от разработки языка. Однако, люди связывают Python со словом «змея».</p>
+<img class="img4" src="js.png">
+<h5>Javascript</h5>
+<p id="t4">JavaScript — это язык программирования для широкого круга применения. Но, чаще всего, он применяется как сценарный язык — для программирования функциональности компонентов веб-страниц, создания их интерактивности. Он отличается мультипарадигменностью. Именно в вебе этот язык задействуется наиболее часто. Современная веб-разработка без JavaScript не могла бы существовать в том виде, в котором она существует сегодня.</p>
+<img class="img9"  src="стрел1.jpg">
+<img class="img5"  src="стрелка4.png">
+<img class="img6" src="c.png">
+<h4>C++</h4>
+<p id="t5">C++ — это язык программирования, который был разработан в 80-х годах прошлого века как расширение языка C. Этот язык отличается от Си тем, что имеет больший набор возможностей, включая объектно-ориентированное программирование и шаблоны.
+C++ позволяет создавать приложения и программы любой сложности. На нем пишут игры и обучают нейросети, благодаря ему работает поиск Google и роботы торговых бирж.</p>
+<img class="img10"  src="стрел.jpg">
+<img class="img11"  src="стрелка3.png">
+<h6>Java</h6>
+<img class="img12"  src="java.png">
+<img class="img13"  src="стрел1.jpg">
+<p id="t6">Java — объектно-ориентированный язык программирования (ООП). Всё взаимодействие в нём происходит через объектыВ итоге программа в стиле ООП состоит из отдельных блоков, которые хорошо расширяются и масштабируются. Поэтому язык Java подходит для разработки программ, которые планируют долго использовать и постоянно развивать. Java берёт лучшее из компилируемых и интерпретируемых языков. </p>
+<footer>
+                <div class="container">
+                    <div class="footer-text">
+                        <h3>Контакты</h3>
+                        <p1>Почтовый адрес: annamart05@mail.ru </p1>
+                        <br>
+                        <p1>Номер для связи: +79823164396</p1>
+                    </div>
+                    <div class="footer-text">
+                        <h3>Быстрый доступ</h3>
+                        <ul class="list">
+                            <li><a href="опис.html">Описание</a></li>
+                            <li><a href="sped.html">Среды для разработки</a></li>
+                            <li><a href="главная.html">Главная</a></li>
+                            <li><a href="iz.html">Языки будущего</a></li>
+                            <li><a href="kon.html">Контакты</a></li>
+                        </ul> 
+                    </div>
+                </div>
+            </footer>
+</body>
+</html>
